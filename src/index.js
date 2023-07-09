@@ -2,6 +2,8 @@ const express = require('express')
 const socketio = require('socket.io')
 const http = require('http')
 const path = require('path')
+const dotenv = require('dotenv')
+dotenv.config()
 //Llamar al modulo CORS para que no lo bloquee el hosting
 const cors = require('cors')
 
@@ -12,7 +14,7 @@ const io = socketio(server)
 require('./socket')(io)
 
 //SE CAMBIA EL PUERTO PARA QUE NO LO BLOQUEE EL HOSTING
-app.set('port', process.env.PORT || 5000)
+app.set('port', process.env.PORT_DEV || 5000)
 app.use(express.static(path.join(__dirname, 'public')))
 app.use(cors())
 
