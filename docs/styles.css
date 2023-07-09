@@ -1,0 +1,145 @@
+body, html{
+    width: 100%; height: 100%;
+}
+canvas {
+    display: block;
+}
+
+
+.content{
+    position: relative;
+}
+
+.colors{
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+}
+
+.delete{
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    margin-left: 170px;
+}
+
+.color1{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.color2{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(50, 205, 63);
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.color3{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    cursor: pointer;
+}
+
+.color4{
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.color5{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.selected-red{
+    width: 30px;
+    height: 30px;
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(245, 98, 98, 0.842);
+}
+
+.selected-green{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(50, 205, 63, 0.336);
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.selected-blue{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(61, 61, 167, 0.829);
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    cursor: pointer;
+
+}
+
+.selected-yellow{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(223, 223, 111, 0.89);
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.selected-black{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(29, 27, 27, 0.459);
+    border: 0px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+#btn-delete{
+    width: 30px;
+    height: 32px;
+    border-color: #000;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+
+#users {
+    position: absolute;
+    top: 5px;
+    padding: 10px;
+    margin-left: 75%;
+    font-size: 20px;
+    color: green;
+}
