@@ -11,11 +11,11 @@ const app = express()
 const server = http.createServer(app)
 const io = socketio(server)
 
-require('./socket')(io)
+require('./src/socket')(io)
 
 //SE CAMBIA EL PUERTO PARA QUE NO LO BLOQUEE EL HOSTING
 app.set('port', process.env.PORT_DEV || 5000)
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, 'src/public')))
 app.use(cors())
 
 
